@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,6 +20,15 @@
 
   <body>
     <div id="root"></div>
+    <div id="chatbot-container"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script src="https://kaaylabs-operations-new.s3.us-east-1.amazonaws.com/cdn-poc/Chickory-Chat.js"></script>
+    <script>
+      window.chatbotConfig = {
+        tenantUid: '1',
+        chatbotUid: '4a167695-5efa-4708-90be-ef1f01b4c5c0',
+      };
+      window.renderChatbotUI('chatbot-container');
+    </script>
   </body>
 </html>
